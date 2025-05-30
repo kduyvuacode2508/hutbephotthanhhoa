@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dịch Vụ Hút Bể Phốt</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0fdf4, #ecfeff);
+      padding: 30px;
+    }
+
+    /* Slide ảnh */
+    .slider {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.8s ease;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    /* Form dịch vụ */
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #059669;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 500;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      background: #059669;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #047857;
+    }
+
+    .news-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .news-item {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .news-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 15px;
+    }
+
+    .news-content h3 {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+      color: #0d47a1;
+    }
+
+    .news-content p {
+      font-size: 0.95em;
+      color: #444;
+      margin-bottom: 10px;
+    }
+
+    .news-date {
+      font-size: 0.85em;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ttkh">
+    <section class="form-header">
+      <h2>📋 Đăng Ký Dịch Vụ Ngay</h2>
+      <p>✨ Nhập thông tin để chúng tôi <strong>liên hệ và hỗ trợ bạn nhanh nhất!</strong></p>
+    </section>
+    <div class="form-dangky-container">
+      <section id="form-dangky" class="form-section">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSe_tp_16TCDhKP2AQFKLmqHovMOwB2oDJCEzcF_53cBWz9NLw/viewform?usp=sharing&ouid=112110435385675974454"
+          width="100%" height="600" style="border:0; border-radius: 10px;" loading="lazy">
+        </iframe>
+      </section>
+    </div>
+  </div>
+  <section id="news-list" class="news-list"></section>
+ <h1 class="nasme" style="color: #047857;" ></h1>
+  <script>
+    fetch("http://localhost:3000/news")  // hoặc đường dẫn json-server online
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById("news-list");
+        container.innerHTML = data.map(item => `
+      <div class="news-item">
+        <img src="${item.image}" alt="${item.title}">
+        <div class="news-content">
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
+          <span class="news-date">${item.date}</span>
+        </div>
+      </div>
+    `).join("");
+      })
+      .catch(err => console.error("Lỗi tải tin tức:", err));
+  </script>
+
+</body>
+
+</html>
