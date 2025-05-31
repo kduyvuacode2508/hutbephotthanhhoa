@@ -1,6 +1,7 @@
 const postsData = [
   {
     id: "1",
+    slug: "tai-sao-phai-hut-be-phot-dinh-ky",
     title: "Tại Sao Phải Hút Bể Phốt Định Kỳ? Lợi Ích Gì Khi Làm Sớm?",
     image: "",
     code: `
@@ -61,6 +62,7 @@ const postsData = [
   },
   {
     id: "2",
+    slug: "dich-vu-hut-be-phot-tai-thanh-hoa",
     title: "Dịch Vụ Hút Bể Phốt Tại Thanh Hóa – Chuyên Nghiệp, Nhanh Gọn, Không Bốc Mùi",
     image: "",
     code: `
@@ -145,6 +147,7 @@ const postsData = [
   },
   {
     id: "3",
+    slug: "dich-vu-ve-sinh-moi-truong-da-dang",
     title: "Dịch Vụ Vệ Sinh Môi Trường Đa Dạng Tại Thanh Hóa",
     image: "",
     code: `
@@ -243,6 +246,7 @@ const postsData = [
   },
   {
     id: "4",
+    slug: "cac-goi-dich-vu-hut-be-phot",
     title: "Các Gói Dịch Vụ Hút Bể Phốt Tại Thanh Hóa",
     image: "",
     code: `
@@ -329,6 +333,7 @@ const postsData = [
   },
   {
     id: "5",
+    slug: "quy-trinh-hut-be-phot",
     title: "Quy trình hút bể phốt chuyên nghiệp tại Thanh Hóa",
     image: "",
     code: `
@@ -355,6 +360,7 @@ const postsData = [
   },
   {
     id: "6",
+    slug: "hut-be-phot-tai-cac-huyen-thanh-hoa",
     title: "Dịch Vụ Hút Bể Phốt Tại Tất Cả Các Huyện Ở Thanh Hóa",
     image: "",
     code: `
@@ -482,6 +488,7 @@ const postsData = [
   },
   {
     id: "7",
+    slug: "bang-gia-dich-vu-hut-be-phot-moi-nhat",
     title: " Bảng Giá Dịch Vụ Hút Bể Phốt Tại Thanh Hóa Mới Nhất",
     image: "",
     code: `
@@ -523,6 +530,7 @@ const postsData = [
   },
   {
     id: "8",
+    slug: "nhung-luu-y-khi-su-dung-dich-vu",
     title: "Những Lưu Ý Khi Sử Dụng Dịch Vụ Hút Bể Phốt",
     image: "",
     code: `
@@ -574,6 +582,7 @@ const postsData = [
   },
   {
     id: "9",
+     slug: "cau-hoi-thuong-gap-ve-hut-be-phot",
     title: "Câu Hỏi Thường Gặp Về Dịch Vụ Hút Bể Phốt (FAQ)",
     image: "",
     code: `
