@@ -1,8 +1,6 @@
 RewriteEngine On
 
-# Nếu đường dẫn không trỏ đến file hoặc thư mục thực tế
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Nếu truy cập /chitet.html/slug thì chuyển nội bộ về /chitet.html
-RewriteRule ^chitet\.html/.*$ /chitet.html [L,QSA]
+RewriteRule ^tin-tuc/(.*)$ /chitet.html [L,QSA]
