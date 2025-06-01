@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kduyvuacode2508.github.io/hutbephotthanhhoa/sitemap.xml
