@@ -263,6 +263,7 @@
     }
 
     .reason {
+      
       background: white;
       border-radius: 12px;
       padding: 20px;
@@ -1098,3 +1099,58 @@
     margin-top: 1em;
     color: #0066cc;
   }
+
+  .fixed-more {
+    position: fixed;
+    right: 10px;
+    top: 70px;
+    z-index: 9999;
+    text-align: center;
+}
+
+.fixed-more button {
+    background-color: #1976D2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.fixed-more button:hover {
+    background-color: #0d47a1;
+}
+
+.more-links {
+    display: none;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    text-align: left;
+}
+
+.more-links a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.more-links a:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 480px) {
+    .fixed-more {
+        top: 70px;
+        right: 10px;
+    }
+}
+.more-links.show {
+  display: block;
+}

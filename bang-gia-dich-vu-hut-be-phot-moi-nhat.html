@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,7 +42,25 @@
             </a>
         </div>
     </header>
-
+    <div class="fixed-more">
+      <button id="toggleMoreBtn">
+          <i class="fa-solid fa-bars"></i> XEM THÊM
+      </button>
+      <div class="more-links" id="moreLinks">
+          <a href="tai-sao-phai-hut-be-phot.html">Tại sao phải hút bể phốt?</a>
+          <a href="hut-be-phot-chuyen-nghiep.html">Hút bể phốt chuyên nghiệp</a>
+          <a href="hut-be-phot-da-dang.html">Hút bể phốt đa dạng</a>
+          <a href="cac-goi-hut-be-phot.html">Các gói hút bể phốt</a>
+          <a href="quy-trinh-hut-be-phot.html">Quy trình hút bể phốt</a>
+          <a href="hut-be-phot-tai-cac-huyen-thanh-hoa.html">Hút bể phốt tại các huyện</a>
+          <a href="bang-gia-dich-vu-hut-be-phot-moi-nhat.html">Bảng giá dịch vụ</a>
+          <a href="nhung-luu-y-khi-su-dung-dich-vu.html">Những lưu ý khi sử dụng dịch vụ</a>
+          <a href="cau-hoi-thuong-gap-ve-hut-be-phot.html">Câu hỏi thường gặp</a>
+          <a href="nen-dung-chat-lieu-nao.html">Nên dùng chất liệu nào?</a>
+          <a href="khi-nao-can-hut.html">Khi nào cần hút?</a>
+          <a href="tai-sao-be-phot-co-mui.html">Tại sao bể phốt có mùi?</a>
+      </div>
+  </div>
     <section class="company-info">
         <div class="company-intro">
         <h1 style="font-size: 35px;">7. Bảng Giá Dịch Vụ Hút Bể Phốt Tại Thanh Hóa Mới Nhất</h1>
@@ -98,5 +116,10 @@
         </div>
 
     </footer>
+    <script>
+      document.getElementById('toggleMoreBtn').addEventListener('click', function () {
+          document.getElementById('moreLinks').classList.toggle('show');
+      });
+  </script>
 </body>
 </html>

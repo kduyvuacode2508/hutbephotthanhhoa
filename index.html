@@ -60,7 +60,7 @@
             </div>
             <div class="header-nav">
                 <a href="/">Giới thiệu</a>
-                <a href="service.html">Dịch vụ</a>
+                <a href="service.html">Dịch vụ </a>
                 <a href="news.html">Tin tức</a>
                 <a href="contact.html">Liên hệ</a>
             </div>
@@ -72,6 +72,25 @@
             </a>
         </div>
     </header>
+    <div class="fixed-more">
+        <button id="toggleMoreBtn">
+            <i class="fa-solid fa-bars"></i> XEM THÊM
+        </button>
+        <div class="more-links" id="moreLinks">
+            <a href="tai-sao-phai-hut-be-phot.html">Tại sao phải hút bể phốt?</a>
+            <a href="hut-be-phot-chuyen-nghiep.html">Hút bể phốt chuyên nghiệp</a>
+            <a href="hut-be-phot-da-dang.html">Hút bể phốt đa dạng</a>
+            <a href="cac-goi-hut-be-phot.html">Các gói hút bể phốt</a>
+            <a href="quy-trinh-hut-be-phot.html">Quy trình hút bể phốt</a>
+            <a href="hut-be-phot-tai-cac-huyen-thanh-hoa.html">Hút bể phốt tại các huyện</a>
+            <a href="bang-gia-dich-vu-hut-be-phot-moi-nhat.html">Bảng giá dịch vụ</a>
+            <a href="nhung-luu-y-khi-su-dung-dich-vu.html">Những lưu ý khi sử dụng dịch vụ</a>
+            <a href="cau-hoi-thuong-gap-ve-hut-be-phot.html">Câu hỏi thường gặp</a>
+            <a href="nen-dung-chat-lieu-nao.html">Nên dùng chất liệu nào?</a>
+            <a href="khi-nao-can-hut.html">Khi nào cần hút?</a>
+            <a href="tai-sao-be-phot-co-mui.html">Tại sao bể phốt có mùi?</a>
+        </div>
+    </div>
     <main>
 
         <div class="company-info-container">
@@ -517,6 +536,11 @@
         </div>
 
     </footer>
+    <script>
+        document.getElementById('toggleMoreBtn').addEventListener('click', function () {
+            document.getElementById('moreLinks').classList.toggle('show');
+        });
+    </script>
     <script type="application/ld+json">
         {
           "@context": "https://schema.org/", 
